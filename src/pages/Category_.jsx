@@ -64,6 +64,7 @@ function Category() {
 						: 'Places for sale'}
 				</p>
 			</header>
+
 			{loading ? (
 				<Spinner />
 			) : listings && listings.length > 0 ? (
@@ -77,7 +78,7 @@ function Category() {
 					</main>
 				</>
 			) : (
-				<p>No listings for {params.categoryName} </p>
+				<p>No listings for {params.categoryName}</p>
 			)}
 		</div>
 	)
